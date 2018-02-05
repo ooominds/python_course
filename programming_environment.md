@@ -1,0 +1,20 @@
+Before we dive into learning how to program in pyhon, we need to get set up in a way that we can be productive. There are two things that we will need: An editor for writing our programs and an environment to execute them in, i.e. a python interpreter.
+
+Let's start with the interpreter. One possibility would be to just install python and be done with it. That would be fine as long as we don't want to use code that other people have written (python packages, also called libraries), which we will need to install, which, especially on Windows, can quickly turn into a nightmare when packages conflict or we forgot to install some requirement or managed to overwrite something we shouldn't have.
+
+To avoid this, we will use a package manager. This has two advantages. The first is that installing or updating packages will usually only require a single command and all dependencies of the package in question will be installed automatically, while we should get notified about any conflicts. The other advantage is that we can create multiple environments (with different packages installed in each) and switching between them or removing everything associated with one of them is again one command and should leave no traces or clog up our system. In other words, a package manager makes it a lot more difficult to mess something up.
+
+The package manager we will use is called [conda](https://conda.io/docs/). To make it maximally easy, there is a package called [Anaconda](https://www.anaconda.com), which is basically the conda package manager bundled with more than 100 commonly used packages (a bunch of which we will be using), sparing us the need to install all of them ourselves. Just click [here](https://www.anaconda.com/download/) and download Anaconda for your system (click on the symbol for your operating system and on download under *Python 3.6 version*). For windows you basically just need to run the .exe file and agree to everything and on linux call the downloaded file with bash, but see [here](https://docs.anaconda.com/anaconda/install) for more detailed installation instuctions.
+
+If you are using Windows, you will need something that functions similar to a linux terminal, which is an interactive text box that will allow us to send (conda) commands and python code to. The best one seems to be [cmder](http://cmder.net/), just download the zip-archive and unpack to where you want this program to be.
+
+With conda installed, we can create our first environment that we will use. Open up a terminal (run cmder on Windows) and type in `conda create --name TheNameYouWant`
+
+Whenever we want to use it now, we will have to activate the environment, which you can do by typing `activate TheNameYouWant` in Windows or `source activate TheNameYouWant` in Linux.
+
+Now that python is installed and our environment activated, we can turn to the editor. Since python scripts are just plain text, it seems like it shouldn't matter much what you use to write them in and that Microsoft Notepad would do, but you might be surprised by how much more productive you will get if different elements of the code (numbers, text, functions, veriables, operators, ...) are displayed in different, aesthetically pleasing colours and how useful it is if your code is automatically checked for errors and can be sent to the python interpreter without having to copy and paste it.
+
+There are a number of highly functional editors out there, but we will use sublime text 3, which you can download [here](https://www.sublimetext.com/3). Once installed, we will need a couple of packages that will make our life easier. To install them, open sublime and hit ctrl+shift+p, which should open a dialogue box and when you then start typing "install", it should show you an option "Package Control: Install Package" - click on it. This will open another dialogue box where you can type in the package you want to install.
+
+These are the packages you will need: Anaconda, Git, GitGutter, SublimeLinter-pep8, SublimeLinter-pyflakes and SublimeREPL
+Once you've installed all of these you should be good to go!
