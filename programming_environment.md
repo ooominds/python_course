@@ -10,7 +10,7 @@ If you are using Windows, you will need something that functions similar to a li
 
 With conda installed, we can create our first environment that we will use. Open up a terminal (run cmder.exe on Windows) and type in `conda create --name TheNameYouWant`
 
-Whenever we want to use it now, we will have to activate the environment, which you can do by typing `activate TheNameYouWant` in Windows or `source activate TheNameYouWant` in Linux.
+Whenever we want to use it now, we will have to activate the environment. In linux, you will want to open a tmux window first (just type tmux). Then you can activate the environment by typing `activate TheNameYouWant` in Windows or `source activate TheNameYouWant` in Linux. With the environment loaded, we can finally start python. You could just type python (and hit enter) and it should open the python interpreter, but we will instead use iPython, which is basically an enhanced version of the interpreter that will colour code what you type in, allow autocomplete, keep your history of inputs and adds a whole range of other neat features. Call it by typing "ipython3".
 
 Now that python is installed and our environment activated, we can turn to the editor. Since python scripts are just plain text, it seems like it shouldn't matter much what you use to write them in and that Microsoft Notepad would do, but you might be surprised by how much more productive you will get if different elements of the code (numbers, text, functions, veriables, operators, ...) are displayed in different, aesthetically pleasing colours and how useful it is if your code is automatically checked for errors and can be sent to the python interpreter without having to copy and paste it.
 
