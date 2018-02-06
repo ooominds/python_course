@@ -20,5 +20,8 @@ Once sublime is installed, we will need a couple of packages for the editor that
 
 These are the packages you will need: Anaconda, Git, GitGutter, SendCode, SublimeLinter-pep8, SublimeLinter-pyflakes and SublimeREPL
 
-On Linux, you should be good to go now. On Windows, the last thing left to do is to tell sublime where the cmder.exe lives, so it can send code to the terminal. To do so, hit *ctrl+shift+p* again and type in "settings" and click on "Preferences: SendCode settings". This will open a new window with the general settings on the left and the ones specific to you on the right - it should just be an empty pair of braces with an empty line in the middle. Replace that empty line with this (replacing YourUsername appropriately) and save it (*ctrl+s*):
+On Linux, you should be good to go now. On Windows, the last thing left to do is to tell sublime where the *cmder.exe* lives, so it can send code to the terminal. To do so, hit *ctrl+shift+p* again and type in "settings" and click on "Preferences: SendCode settings". This will open a new window with the general settings on the left and the ones specific to you on the right - it should just be an empty pair of braces with an empty line in the middle. Replace that empty line with this one (changing *YourUsername* appropriately):
+
 `"conemuc": "C:\\Users\\YourUsername\\cmder\\vendor\\conemu-maximus5\\ConEmu\\ConEmuC.exe"`
+
+and save it (*ctrl+s*).
