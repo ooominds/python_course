@@ -33,6 +33,9 @@ Sort:
 ```Python
 sorted_list = sorted(my_list)
 my_list.sort() # sorts in-place, i.e. my_list is now sorted and no copy is returned
+
+sorted_list_reverse = sorted(my_list, reverse=True)
+my_list.reverse() # reverse sorts in-place
 ```
 Access elements:
 ```Python
