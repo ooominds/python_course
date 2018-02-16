@@ -22,6 +22,13 @@ my_list.append(element)
 new_list = old_list + other_list # concatenate old_list and other_list
 my_list += other_list # add elements of other_list to my_list
 ```
+Remove elements:
+```Python
+del my_list[index] # requires index
+my_list.remove(item) # removes first occurrence of item in-place
+item = my_list.pop() # removes first element from list and returns it
+item = my_list.pop(index) # removes indexed element from list and returns it
+```
 Sort:
 ```Python
 sorted_list = sorted(my_list)
