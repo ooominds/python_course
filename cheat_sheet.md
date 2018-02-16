@@ -28,6 +28,7 @@ first_element = my_list[0] # counting starts at 0!
 nth_element = my_list[n-1]
 last_element = my_list[-1] # negative indices are accepted!
 first_ten_elements = my_list[0:10] # in slicing, the indices refer to cut points before/after each element!
+
 # can leave out start or end and all will be selected
 first_ten_elements = my_list[:10]
 all_but_first_two_elements = my_list[2:]
