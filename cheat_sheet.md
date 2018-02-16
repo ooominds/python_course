@@ -11,6 +11,9 @@ Initialize a list:
 ```Python
 my_list = list()
 my_list = []
+first_ten = [0,1,2,3,4,5,6,7,8,9]
+first_ten = range(10)
+next_ten = range(10, 20)
 ```
 Add elements:
 ```Python
