@@ -149,6 +149,15 @@ while condition:
   if other_condition:
     break # break out of while loop on other_condition
 ```
+Do something only if a for loop completes:
+```Python
+for item in my_list:
+  # do something with each item
+  if condition:
+    break
+else:
+  # do something in case a break occurred (i.e. if condition was true for some item)
+```
 
 ## Functions
 Define a function:
