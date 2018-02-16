@@ -24,8 +24,8 @@ my_list += other_list # add elements of other_list to my_list
 ```
 Remove elements:
 ```Python
-del my_list[index] # requires index
-my_list.remove(item) # removes first occurrence of item in-place
+del my_list[index] # removes indexed element from my_list
+my_list.remove(item) # removes first occurrence of item from my_list
 item = my_list.pop() # removes first element from list and returns it
 item = my_list.pop(index) # removes indexed element from list and returns it
 ```
