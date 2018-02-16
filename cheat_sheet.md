@@ -61,6 +61,13 @@ Split on symbol:
 my_string_list = my_string.split(separator)
 tab_separated_elements = my_string.split("\t")
 ```
+Join multiple strings into one:
+```Python
+my_string = first_string + second_string
+
+list_of_strings = ["Here","be","dragons","..."]
+my_string = " ".join(list_of_strings) # join list placing " " in between them
+```
 Remove trailing/leading symbols:
 ```Python
 my_string_clean = my_string.strip() # removes whitespaces, newlines and tabs
