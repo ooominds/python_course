@@ -116,6 +116,10 @@ Start reading/writing at position (in bytes):
 ```Python
 my_file.seek(0) # go back to beginning of file
 ```
+Close an opened file:
+```Python
+my_file.close() # makes sure everything written to it is actually saved to disk!
+```
 
 ## Control Flow
 Execute on condition:
@@ -149,7 +153,7 @@ while condition:
   if other_condition:
     break # break out of while loop on other_condition
 ```
-Do something only if a for loop completes:
+Do something only if a for loop completes normally:
 ```Python
 for item in my_list:
   # do something with each item
