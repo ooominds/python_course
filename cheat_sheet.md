@@ -15,6 +15,7 @@ my_list = []
 Add elements:
 ```Python
 my_list.append(element)
+new_list = old_list + other_list # concatenate old_list and other_list
 my_list += other_list # add elements of other_list to my_list
 ```
 Sort:
