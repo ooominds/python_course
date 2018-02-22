@@ -97,7 +97,7 @@ my_set.difference_update(other_set) # removes items in other_set from my_set in-
 ```
 
 
-## Sets
+## Dictionaries
 Initialize a dict:
 ```Python
 my_dict = dict()
