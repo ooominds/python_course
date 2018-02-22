@@ -36,6 +36,9 @@ my_list.sort() # sorts in-place, i.e. my_list is now sorted and no copy is retur
 
 sorted_list_reverse = sorted(my_list, reverse=True)
 my_list.reverse() # reverse sorts in-place
+
+sorted_by_key = sorted(my_list, key=sorting_function) # sort by key
+my_list.sort(key=sorting_function)
 ```
 Access elements:
 ```Python
@@ -60,6 +63,79 @@ item in my_list # boolean expression, i.e. is True or False
 Get number of elements in list:
 ```Python
 my_list_length = len(my_list)
+```
+
+## Sets
+Initialize a set:
+```Python
+my_set = set()
+my_set = {}
+```
+Add elements:
+```Python
+my_set.add(element)
+my_set.update(list_of_elements)
+```
+Combine sets:
+```Python
+union = my_set | other_set # union of my_set and other_set
+union = my_set.union(other_set)
+my_set.update(other_set) # union in-place, my_set now contains all elements
+
+intersection = my_set & other_set # intersection of my_set and other_set
+intersection = my_set.intersect(other_set)
+my_set.intersection_update(other_set) # in-place intersection
+```
+Remove elements:
+```Python
+my_set.discardd(item) # removes item from my_set
+my_set.remove(item) # removes item from my_set, throws an error if item is not found
+item = my_set.pop() # removes random item from set and stores it in item
+
+difference = my_set.difference(other_set) # returns items in my_set but not in other_set
+my_set.difference_update(other_set) # removes items in other_set from my_set in-place
+```
+
+
+## Sets
+Initialize a dict:
+```Python
+my_dict = dict()
+my_dict = dict(list_of_pairs)
+```
+Add element:
+```Python
+my_dict[key] = value
+```
+Retrieve value:
+```Python
+value = my_dict[key] # throws an error if key does not exist
+value = my_dict.get(key) # returns None if key is not found
+value = my_dict.get(key, some_value) # returns some_value if key is not found
+```
+Iterate over keys:
+```Python
+for key in my_dict:
+  # do something
+```
+Iterate over key-value pairs:
+```Python
+for key, value in my_dict.items():
+  # do something
+```
+Iterate over values:
+```Python
+for value in my_dict.values():
+  # do something
+```
+Remove item:
+```Python
+del my_dict[key]
+
+# remove all keys satisfying a certain condition
+for key in my_dict.iterkeys(): # iterkeys() allows to remove keys while iterating over them
+  if some_condition:
+    del my_dict[key]
 ```
 
 ## Strings
@@ -178,9 +254,33 @@ result_with_4 = my_function(first_argument=1) # second_argument is 4 by default 
 result_with_5 = my_function(1, 5) # feed arguments by position in definition, without keyword
 ```
 
+## Regular Expressions
+Compile regular expression:
+```Python
+import re
+my_regular_expression = re.compile("somePattern")
+```
+Search string for pattern
+```Python
+my_regular_expression.search(some_string):
+```
+
 ## Idioms
 Execute if item is not 0 or None:
 ```Python
 if item:
   # do something
+```
+Increase variable in place:
+```Python
+some_number += 1 # add one to some_number
+```
+
+## Various
+Imports:
+```Python
+import package # import full package
+from package import module # imports module from package
+from package import module as mod # imports module from package and assigns it the name "mod"
+from package.subpackage import module # import module from subpackage of package
 ```
